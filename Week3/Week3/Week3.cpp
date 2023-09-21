@@ -10,10 +10,11 @@ int main()
     char key;
 
         while (1) {
-            Sleep(150); // 0.15초 지연시간 줌 
+            Sleep(150); // 0.15초 지연시간 줌 (0.3초는 너무 길어요)
             key = _getch();
             if (key == 75) {
                 bein = key; // 입력한 키에 좌측 화살표의 아스키코드값을 넣어준다
+                noin = 0; // 이전 입력이 무엇이었던, 해당 커맨드 이후 a를 눌러서 기술 발동은 불가능
                 printf("←");
             }
             else if (key == 77) {
@@ -25,6 +26,7 @@ int main()
                 }
                 else {
                     bein = key; // 기술 발동이 불가능하다면, 입력한 키 초기화
+                    noin = 0; // 또한 기술 발현이 불가능한 상태로 변경
                 }
                 printf("→");
             }
@@ -34,11 +36,13 @@ int main()
                 }
                 else {
                     bein = key; // 기술 발동이 불가능하다면, 입력한 키 초기화
+                    noin = 0; // 또한 기술 발현이 불가능한 상태로 변경
                 }
                 printf("↑");
             }
             else if (key == 80) {
                 bein = key; // 발동 가능한 기술이 없으므로 입력한 키만 초기화
+                noin = 0; // 또한 기술 발현이 불가능한 상태로 변경
                 printf("↓");
             }
             else if (key == 97) {
