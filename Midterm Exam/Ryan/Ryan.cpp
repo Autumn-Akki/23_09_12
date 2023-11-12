@@ -349,7 +349,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow) {
 
     hWnd = CreateWindow(
         L"ButtonWindowClass", L"곰돌이", WS_OVERLAPPEDWINDOW & ~WS_SIZEBOX,
-        800, 480, 800, 480, NULL, NULL, hInstance, NULL);
+        800, 480, 920, 480, NULL, NULL, hInstance, NULL);
 
     if (!hWnd) {
         return FALSE;
@@ -357,23 +357,23 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow) {
 
     hButtonBox = CreateWindow(
         L"BUTTON", L"Box", WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,
-        0, 16, 160, 64, hWnd, (HMENU)1, hInstance, NULL);
+        16, 16, 160, 64, hWnd, (HMENU)1, hInstance, NULL);
 
     hButtonCircle = CreateWindow(
         L"BUTTON", L"Circle", WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,
-        160, 16, 160, 64, hWnd, (HMENU)2, hInstance, NULL);
+        192, 16, 160, 64, hWnd, (HMENU)2, hInstance, NULL);
 
     hButtonBono = CreateWindow(
         L"BUTTON", L"BonoBono", WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,
-        320, 16, 160, 64, hWnd, (HMENU)3, hInstance, NULL);
+        368, 16, 160, 64, hWnd, (HMENU)3, hInstance, NULL);
 
     hButtonRyan = CreateWindow(
         L"BUTTON", L"Ryan", WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,
-        480, 16, 160, 64, hWnd, (HMENU)4, hInstance, NULL);
+        544, 16, 160, 64, hWnd, (HMENU)4, hInstance, NULL);
 
     hButtonCube = CreateWindow(
         L"BUTTON", L"Cube", WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,
-        640, 16, 160, 64, hWnd, (HMENU)5, hInstance, NULL);
+        720, 16, 160, 64, hWnd, (HMENU)5, hInstance, NULL);
 
     ShowWindow(hWnd, nCmdShow);
     UpdateWindow(hWnd);
