@@ -200,10 +200,7 @@ void DrawRyan(HDC hdc, int sx, int sy, int ex, int ey) {
     MoveToEx(hdc, x + 40, y - 23, NULL);
     LineTo(hdc, x + 10, y - 23);*/
 
-
-
 }
-
 
 
 // 모양 그리기 함수
@@ -235,7 +232,7 @@ void DrawShape(HWND hWnd, HDC hdc) {
             DrawRyan(hdc, ptStart.x, ptStart.y, ptEnd.x, ptEnd.y);
             break;
         }
-
+        
 
 
         default:

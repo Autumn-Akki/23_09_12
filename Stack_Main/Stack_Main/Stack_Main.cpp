@@ -2,6 +2,26 @@
 #include <iostream>
 using namespace std;
 
+int main() {
+    SStack s;
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(40);
+    s.push(50);
+    s.push(60);
+    s.push(70);
+
+
+
+    for (int i = 0; i < 7; i++) {
+        cout << s.pop() << " 스텍에서 제거됨 \n";
+        cout << "현재 Top은 " << s.peek() << "입니다.\n\n" << endl;
+    }
+
+    return 0;
+
+
 // 스택 클래스의 생성자
 SStack::SStack() {
     top = nullptr; // 초기화 시 top은 null
@@ -53,22 +73,4 @@ bool SStack::isEmpty() {
 }
 
 
-int main() {
-    SStack s;     
-    s.push(10);     
-    s.push(20);  
-    s.push(30);    
-    s.push(40);    
-    s.push(50);   
-    s.push(60);   
-    s.push(70);     
-
-
-    
-    for (int i = 0; i < 7; i++) {
-        cout << s.pop() << " 스텍에서 제거됨 \n";
-        cout << "현재 Top은 " << s.peek() << "입니다.\n\n" << endl;
-    }
-
-    return 0;
 }
