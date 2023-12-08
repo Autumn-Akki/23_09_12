@@ -3,6 +3,7 @@
 using namespace std;
 
 int main() {
+<<<<<<< HEAD
     SStack s;
     s.push(10);
     s.push(20);
@@ -14,13 +15,30 @@ int main() {
 
 
 
+=======
+    SStack s;     
+    s.push(10);     
+    s.push(20);  
+    s.push(30);    
+    s.push(40);    
+    s.push(50);   
+    s.push(60);   
+    s.push(70);     
+
+
+    
+>>>>>>> c6e41c44544ba916e53cb86aded5cf404eadb043
     for (int i = 0; i < 7; i++) {
         cout << s.pop() << " 스텍에서 제거됨 \n";
         cout << "현재 Top은 " << s.peek() << "입니다.\n\n" << endl;
     }
 
     return 0;
+<<<<<<< HEAD
 
+=======
+}
+>>>>>>> c6e41c44544ba916e53cb86aded5cf404eadb043
 
 // 스택 클래스의 생성자
 SStack::SStack() {
@@ -73,4 +91,7 @@ bool SStack::isEmpty() {
 }
 
 
+<<<<<<< HEAD
 }
+=======
+>>>>>>> c6e41c44544ba916e53cb86aded5cf404eadb043
